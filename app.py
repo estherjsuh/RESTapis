@@ -15,9 +15,7 @@ api = Api(app)
 
 #before first request runs, this will run; and create the data.db file
 #this removes the create_table.py script
-@app.before_first_request
-def create_tables():
-    db.create_all()
+
 
 jwt = JWT(app, authenticate, identity) #jwt creates new endpoint, /auth
 
