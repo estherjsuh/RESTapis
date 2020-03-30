@@ -1,0 +1,5 @@
+#files to ignore when adding to git
+.DS_Store
+__pycache__/
+*.pyc
+data.db
